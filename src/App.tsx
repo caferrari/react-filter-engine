@@ -28,9 +28,11 @@ class App extends React.Component<{}, IState> {
     return (
       <div className='App'>
         <FilterEngine onChange={this.onChange}>
-          <FilterText label='Nome' attribute='name' />
-          <FilterText label='Cidade' attribute='city' />
-          <FilterText label='Cidade' attribute='citxx' />
+          <FilterText label='Name' attribute='name' />
+          <FilterText label='City' attribute='city' />
+          <p>
+            <FilterText label='Street' attribute='street' />
+          </p>
           <p>
             <FilterText label='Email' attribute='email' />
           </p>
